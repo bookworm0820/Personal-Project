@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="SeungTae Lee">
+    <meta name="keywords" content="Coffee">
+    <meta name="description" content="Advanced Web Programming Personal Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about coffee</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="slidingtext.css">
+</head>
+<body>
+    <header>
+        <h1>All About Coffee</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="coffee.html">Coffee</a></li>
+            <li><a href="coffeebeans.html">Coffee Beans</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="baristaskills.html">Barista Skills</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+          <h2>Abstract</h2>
+          <p>&nbsp;This is a web page for personal project. Therefore it does not upload to the server. In fact, I did a lot of effort into this site and I can not live without telling the world. But I don't have a computer for server and I don't have the skills to host this site. It's too bad. I need to study more.</p>
+          <p>&nbsp;Back to the point, the subject I am taking is advanced web programming. The subject code is ITEC416003 and Professor Ryu, EunKyung teaches this. She is very nice. The Mid-exam of this subject is to submit an HTML files that we produced ourselves. So I made it.</p>
+        </article>
+        <article>
+          <h2>Introduce Myself</h2>
+          <p>&nbsp;My name is Lee, SeungTae. I am a student of the Department of Library and Information Science at Kyungpook National University's College of Social Sciences. I am in course of convergence major. That is a major of Digital Information Management.</p>
+          <p>&nbsp;I have taken Basic Programming class that deals with C and now I am taking this subject with An Introduction to Computer Science. When I first learned C, it was really hard and I did not want to do it. However, as I studied HTML, I gradually reagained my confidence and began to have fun. Of course HTML is difficult enough. But unlike C, HTML shows the result as much as I work harder. That is why I am more into it. An Introduction of Computer Science fills in the parts that have not been understood while taking computer-related classes.</p>
+        </article>
+        <article>
+          <h2>Goals</h2>
+          <p>&nbsp;The purpose of this project is to collect information about coffee. The reason why I chose this topic is because I am interested in coffee. I passed the test by the SCA(Specialty Coffee Association) presiding officer in 2019. So I am qualified as a European barista.</p>
+        </article>
+        <article>
+          <h2>Content</h2>
+          <p>&nbsp;Its composition is divided into a brief introduction to coffee, coffee beans, history of coffee and barista skills. I have not even learned about DB and PHP yet, so the information is not automatically updated. Therefor, only one article was written for each content.</p>
+        </article>
+    </section>
+    <footer>
+      <h3>Breaking News</h3>
+      <div class="animated-text">
+          <div class="line">
+            <a href="https://www.zdnet.co.kr/view/?no=20200501092017" target="_blank">코로나19에 커피머신 온라인 판매 비중 76% 역대 최고</a>
+          </div>
+          <div class="line">
+            <a href="https://www.news1.kr/articles/?3922230" target="_blank">[생활속과학]커피 마셔도 나는 왜 또 졸릴까</a>
+          </div>
+          <div class="line">
+            <a href="http://news.heraldcorp.com/view.php?ud=20191127000343" target="_blank">2040년 아라비카·로부스타 커피 멸종 위기</a>
+          </div>
+          <div class="line">
+            <a href="https://www.sedaily.com/NewsView/1Z1NVAXATT" target="_blank">흔들리는 커피숍··· 폐업률 66.86% '10년래 최고'</a>
+          </div>
+          <div class="line">
+             <a href="https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=004&oid=050&aid=0000053471" target="_blank">파스쿠찌, ‘이탈리아 정통 에스프레소’로 인기몰이</a>
+          </div>
+          <div class="line">
+            <a href="http://www.jejuilbo.net/news/articleView.html?idxno=132573" target="_blank">아라비카와 로부스타, 리베리카</a>
+          </div>
+          <div class="line">
+            <a href="https://www.yna.co.kr/view/AKR20200422137100017?input=1195m" target="_blank">에스프레소·카페라테보다 '달고나커피'…세계네티즌 관심폭발</a>
+          </div>
+          <div class="line">
+            <a href="https://news.mt.co.kr/mtview.php?no=2020042916405719842" target="_blank">한류가 된 Dalgona(달고나) 커피, 구글 검색량 보니</a>
+          </div>
+          <div class="line">
+            <a href="https://www.yna.co.kr/view/AKR20200224128300004?input=1195m" target="_blank">서울시, 커피전문점 등 1회용품 한시적 허용</a>
+          </div>
+          <div class="line">
+            <a href="http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002637106&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news" target="_blank">코로나로 다시 늘어난 일회용품, 환경은 어찌하나</a>
+          </div>
+        </div>
+        <small>
+           <div id="digClock"></div>
+            &copy; Copyright - SeungTae Lee
+            &nbsp;&nbsp;&nbsp;&reg; 2020&nbsp;&nbsp;&nbsp;
+        </small>
+    </footer>
+    <script>
+      function digClock() { var today=new Date();
+          var day=today.getFullYear() +  ". " + today.getMonth() + ". " + today.getDate() + ". "; 
+          var time=today.getHours() + ": " + today.getMinutes() + ": " + today.getSeconds();
+          document.getElementById("digClock").innerHTML=day+time;
+          setTimeout('digClock()', 1000);
+      } digClock(); 
+    </script>
+</body>
+</html>

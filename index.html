@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+    <div class="login-box">
+        <form class="login-form">
+            <h1>Welcome to My Project !</h1>            
+            <input type="id" id="id_" placeholder="ID" class="txtb">
+            <input type="password" id="pass_" placeholder="Password" class="txtb">            
+            <input type="button" value="Login" onclick="check()" class="login-btn">
+        </form>
+        <p>
+            Do you want to access to administrator account?<br>
+            <button class="account-btn" onclick="popup()">Yes, I do</button>
+        </p> 
+    </div>
+    <script>
+        function check() {
+            document.getElementById('submit')
+            var ID = document.getElementById('id_').value;
+            var pass = document.getElementById('pass_').value;
+            if (ID === "admin" && pass === "123") {
+                location.href="main.html"
+            }
+            else {
+                alert("로그인에 실패하셨습니다.")
+            }
+        }
+        function popup() {
+            alert("ID: admin / Password: 123")
+        }
+    </script>
+</body>
+</html>
