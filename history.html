@@ -124,12 +124,13 @@
         </small>
     </footer>
     <script>
-        function digClock() { var today=new Date();
-            var day=today.getFullYear() +  ". " + today.getMonth() + ". " + today.getDate() + ". "; 
-            var time=today.getHours() + ": " + today.getMinutes() + ": " + today.getSeconds();
-            document.getElementById("digClock").innerHTML=day+time;
-            setTimeout('digClock()', 1000);
-        } digClock(); 
-      </script>
+      function digClock() { var today=new Date();
+          var year=today.getFullYear() + ". ";
+          var day=today.getMonth()+1 + ". " + today.getDate() + ". "; 
+          var time=today.getHours() + ": " + today.getMinutes() + ": " + today.getSeconds();
+          document.getElementById("digClock").innerHTML=year+day+time;
+          setTimeout('digClock()', 1000);
+      } digClock(); 
+    </script>
 </body>
 </html>
